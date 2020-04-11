@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world-1
+  labels:
+    name: hello-world-1
+spec:
+  containers:
+  - name: hello-world-1
+    image: pablon27/hello-world-js:1.0.0
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8080
+    envFrom:
+      - configMapRef:
+         name: myconfigmap1
