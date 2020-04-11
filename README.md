@@ -15,6 +15,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Configuración](#configuracion)
 - [Variables de ambiente](#envvars)
 - [ConfigMap](#configmap)
+- [Secrets](#secrets)
 
 ## PODs
 
