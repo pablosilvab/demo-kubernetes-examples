@@ -1,6 +1,11 @@
 # Demo Kubernetes
 El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos de Kubernetes
 
+## Requerimientos 📋
+
+- Tener Kubernetes instalado
+- Un cluster Kubernetes disponible
+
 ## Contenido
 
 - [PODs](#pods)
