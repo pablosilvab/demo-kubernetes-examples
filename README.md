@@ -8,6 +8,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Deployment](#deployment)
 - [Namespaces](#namespaces)
 - [Configuración](#configuracion)
+- [Variables de ambiente](#envvars)
 
 ## PODs
 
@@ -128,3 +129,13 @@ Puedes definir comandos y argumentos para los contenedores que se ejecuten en un
     command: ["printenv"]
     args: ["HOSTNAME", "KUBERNETES_PORT"]
 ```
+
+### EnvVars
+
+Puedes definir variables de ambiente para los contenedores que se ejecutan en un Pod.
+
+```
+kubectl exec -it hello-world -- /bin/bash
+```
+
+En la shell puedes ejecutar el comando ```printenv``` para ver las variables de ambiente.
