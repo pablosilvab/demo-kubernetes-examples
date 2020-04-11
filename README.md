@@ -6,6 +6,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [PODs](#pods)
 - [ReplicaSet](#replicaset)
 - [Deployment](#deployment)
+- [Namespaces](#namespaces)
 
 ## PODs
 
@@ -15,6 +16,12 @@ Puedes crear un Pod desplegando una imagen con un comando kubectl. Esto crea aut
 
 ```
 kubectl run nginx --image nginx
+```
+
+o bien 
+
+```
+kubectl run --generator=run-pod/v1 nginx --image=nginx
 ```
 
 Otra forma de crear Pods es mediante un archivo Yaml (manifiesto), el cual se aplica con el comando kubectl apply
@@ -76,6 +83,35 @@ Puedes actualizar tu deployment con el siguiente comando:
 
 ```
 kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1 --record
+```
+
+## Namespaces
+
+Los recursos de Kubernetes se alojan por defecto en un espacio denominado Namespaces. Aquí se crean nuestros Pods, Services, ReplicaSet, etc.
+
+Para crear un Namespace se utiliza el comando:
+
+```
+kubectl create namespace dev
+```
+
+Para trabajar en ese Namespace:
+
+```
+kubectl config set-context $(kubectl config current-context) --namespace=dev
+```
+
+Para ver tus Namespaces:
+
+```
+kubectl get ns
+```
+
+Para ver los objetos de un Namespace en particular:
+
+```
+kubectl get pods -n dev
+kubectl get pods --namespace=dev
 ```
 
 
