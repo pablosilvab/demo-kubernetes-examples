@@ -23,7 +23,7 @@ Para ver los Pods del cluster debes ejecutar
 kubectl get pods
 ```
 
-## ReplicaSet
+## ReplicaSet
 
 El objetivo de un objeto ReplicaSet es definir el número de réplicas de Pods ejecutándose al mismo tiempo. Lo puedes definir con el comando kubectl run o en un manifiesto. 
 
