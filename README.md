@@ -18,6 +18,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Secrets](#secrets)
 - [Service Account](#serviceaccount)
 - [Resources](#resources)
+- [Taints & Tolerations](#taints)
 
 ## PODs
 
@@ -216,3 +217,53 @@ Estos recursos son definidos para cada contenedor dentro del Pod.
         memory: "128Mi"
         cpu: "500m"
 ```
+
+### Taints
+
+Los Taints & Tolerations no tienen que ver con la seguridad de los Nodos o los Pods, son simplemente restricciones asociadas a estos. Los Tains se definen en los Nodos y los Tolerations en los Pods.
+
+¿Cómo funciona este comportamiento?
+- Se define en un Nodo un Tains, con el objetivo de restringir el acceso a dicho nodo. taint=blue
+- En el Pod se define un Tolerations, el cual debe ser tolerante al Taint.
+
+Definición
+
+```
+kubectl taint nodes node-name key=value:taint-effect
+```
+
+```
+kubectl taint nodes node1 app=blue:NoSchedule | PreferNoSchedule | NoExecute
+```
+
+Borrar Tains:
+
+```
+kubectl taint nodes minikube app=blue:NoSchedule-
+```
+
+
+| Taint Effect | Status Pod|
+| ------------- | ------------- |
+| NoSchedule  | Pending  |
+| PreferNoSchedule  | Running  |
+| NoExecute | Pending  |
+
+Para ver los Taints de un Nodo se puede utilizar el comando:
+
+```
+kubectl describe node kubemaster | grep Taint
+```
+
+### Tolerations
+
+La definición del Pod se incluye en la sección ```spec```.
+
+```
+  tolerations:
+    - key: "app"
+      operator: "Equal"
+      value: "blue"
+      effect: NoSchedule
+```
+
