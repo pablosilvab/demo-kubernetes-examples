@@ -267,3 +267,35 @@ La definición del Pod se incluye en la sección ```spec```.
       effect: NoSchedule
 ```
 
+### Node Selectors
+
+Definición:
+
+```
+kubectl label nodes <node-name> <label-key>=<label-value>
+```
+
+```
+kubectl label nodes node1 size=Large
+```
+
+Un Pod tiene esta definición en la sección ```spec```
+
+```
+  nodeSelector:
+    size: Large
+```
+
+### Node Affinity
+
+```
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+            - key: size
+              operator: In
+              values:
+                - Large
+```
