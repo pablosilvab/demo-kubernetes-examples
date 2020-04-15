@@ -299,3 +299,25 @@ Un Pod tiene esta definición en la sección ```spec```
               values:
                 - Large
 ```
+
+## Observability
+
+### Readiness Probe
+
+Sirve para que Kubernetes sepa si el Pod está listo para recibir tráfico. 
+
+* Definición
+
+```
+    readinessProbe:
+        httpGet:
+          path: /ready
+          port: 8080
+        initialDelaySeconds: 10
+        periodSeconds: 5
+        failureThreshold: 8
+```
+
+### Liveness Probe
+
+Sirve para que Kubernetes sepa si el Pod está vivo, es decir, si la aplicación está corriendo o no. Hay aplicaciones que tardan en iniciar (aplicaciones en Java por ejemplo) y el puerto aun no responde, entonces necesita un tiempo para iniciar.
