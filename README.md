@@ -236,7 +236,7 @@ kubectl taint nodes node-name key=value:taint-effect
 kubectl taint nodes node1 app=blue:NoSchedule | PreferNoSchedule | NoExecute
 ```
 
-Borrar Tains:
+Borrar Taints:
 
 ```
 kubectl taint nodes minikube app=blue:NoSchedule-
