@@ -19,7 +19,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Liveness Probe & Readiness Probe](09-observability)
 - [Pod Design](10-pod-design)
 
-## Referencias
+## Referencias
 
 To do.
 
