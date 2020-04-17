@@ -5,6 +5,11 @@ Los Labels permiten clasificar a los Pods por alguna característica, por ejempl
 
 Ejemplo:
 ```
+metadata:
+  name: nginx
+  labels:
+    app: App1
+    function: backend
 ``` 
 
 ## Selectors
@@ -12,6 +17,17 @@ Los Selectors pson utilizados por los recursos de Kubernetes para asociar este r
 
 Ejemplo:
 ```
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+spec:
+  selector:
+    app: App1
+  ports:
+  - port: 80
+    targetPort: 8080
+
 ```
 
 ## Annotations
@@ -19,4 +35,11 @@ Las Annotations sirven para almacenar información de métricas para otros prop�
 
 Ejemplo: 
 ```
+metadata:
+  name: nginx
+  labels:
+    app: App1
+    function: backend
+  annotations:
+    buildVersion: "1.0"
 ```
