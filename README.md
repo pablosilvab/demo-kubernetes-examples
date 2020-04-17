@@ -19,6 +19,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Service Account](#serviceaccount)
 - [Resources](#resources)
 - [Taints & Tolerations](#taints)
+- [Observability](#observability)
 
 ## PODs
 
