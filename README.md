@@ -21,5 +21,6 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 
 ## Referencias
 
-To do.
+- [Kubernetes](https://kubernetes.io/docs/concepts/)
+-
 
