@@ -288,7 +288,7 @@ Un Pod tiene esta definición en la sección ```spec```
     size: Large
 ```
 
-### Node Affinity
+### Node Affinity
 
 ```
   affinity:
