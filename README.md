@@ -358,7 +358,7 @@ Hay 3 formas:
       periodSeconds: 5
 ```
 
-### Monitoring
+### Monitoring
 
 Algunos comandos útiles para monitorear.
 
