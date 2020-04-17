@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx
+  labels:
+    app: App1
+    function: backend
+  annotations:
+    buildVersion: "1.0"
+spec:
+  replicas: 2
+  selector:
+   matchLabels:
+    app: App1
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: App1
+        function: backend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+          - containerPort: 8080
