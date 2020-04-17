@@ -4,7 +4,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 ## Requerimientos 📋
 
 - Tener Kubernetes instalado en tu PC.
-- Un cluster Kubernetes disponible. (usa Terraform y levanta algún cluster en la nube :D)
+- Un cluster Kubernetes disponible. (usa Terraform y levanta algún cluster en la nube --> [Demo Terraform](https://github.com/pablosilvab/demo-terraform-k8s))
 
 ## Contenido
 
@@ -19,7 +19,8 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Liveness Probe & Readiness Probe](09-observability)
 - [Pod Design](10-pod-design)
 
-## Referencias
+## Referencias
 
-To do.
+- [Kubernetes](https://kubernetes.io/docs/concepts/) - Documentación oficial de Kubernetes.
+
 
