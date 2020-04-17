@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-golang-docker-2
+  labels:
+    name: demo-golang-docker-2
+spec:
+  containers:
+  - name: demo-golang-docker
+    image: pablon27/demo-golang-docker:0.0.2.SNAPSHOT
+    ports:
+      - containerPort: 8080
+    livenessProbe:
+        httpGet:
+          path: /health
+          port: 8080
+        initialDelaySeconds: 10
+        periodSeconds: 5
+        failureThreshold: 8
