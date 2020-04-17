@@ -19,6 +19,8 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Service Account](#serviceaccount)
 - [Resources](#resources)
 - [Taints & Tolerations](#taints)
+- [Pod Design](https://github.com/pablosilvab/k8s-examples/tree/master/10-pod-design)
+
 
 ## PODs
 
