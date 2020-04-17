@@ -21,6 +21,6 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 
 ## Referencias
 
-- [Kubernetes](https://kubernetes.io/docs/concepts/)
--
+- [Kubernetes](https://kubernetes.io/docs/concepts/) - Documentación oficial de Kubernetes.
+
 
