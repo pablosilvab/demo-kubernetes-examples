@@ -9,14 +9,15 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 ## Contenido
 
 - [PODs](01-pods)
-- [ReplicaSet](#replicaset)
-- [Deployment](#deployment)
-- [Namespaces](#namespaces)
-- [Comandos & Enviroments Variables](#envvars)
-- [ConfigMap & Secrets ](#configmap)
-- [Service Account & Resources](#serviceaccount)
-- [Taints & Tolerations](#taints)
-- [Pod Design](https://github.com/pablosilvab/k8s-examples/tree/master/10-pod-design)
+- [ReplicaSet](02-replicaset)
+- [Deployment](03-deployment)
+- [Namespaces](04-namespace)
+- [Comandos & Enviroments Variables](05-env-var)
+- [ConfigMap & Secrets ](06-configmap-secrets)
+- [Service Account & Resources](07-security)
+- [Taints & Tolerations](08-taints-tolerations)
+- [Liveness Probe & Readiness Probe](09-observability)
+- [Pod Design](10-pod-design)
 
 ## Referencias
 
