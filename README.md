@@ -18,6 +18,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Taints & Tolerations](08-taints-tolerations)
 - [Liveness Probe & Readiness Probe](09-observability)
 - [Pod Design](10-pod-design)
+- [Jobs & CronJobs](11-jobs)
 
 ## Referencias
 
