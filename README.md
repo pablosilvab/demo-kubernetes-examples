@@ -20,9 +20,9 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Pod Design](10-pod-design)
 - [Jobs & CronJobs](11-jobs)
 - [Services](12-services)
+- [Ingress](13-ingress)
 
 ## Referencias
 
 - [Kubernetes](https://kubernetes.io/docs/concepts/) - Documentación oficial de Kubernetes.
-
 
