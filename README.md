@@ -19,6 +19,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Liveness Probe & Readiness Probe](09-observability)
 - [Pod Design](10-pod-design)
 - [Jobs & CronJobs](11-jobs)
+- [Services](12-services)
 
 ## Referencias
 
