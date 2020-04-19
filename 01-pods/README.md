@@ -26,3 +26,8 @@ Para ver los Pods del cluster debes ejecutar
 ```
 kubectl get pods
 ```
+
+Para ejecutar el Pod:
+```
+kubectl exec -it mypod /bin/bash
+```
