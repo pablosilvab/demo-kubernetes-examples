@@ -21,6 +21,8 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Jobs & CronJobs](11-jobs)
 - [Services](12-services)
 - [Ingress](13-ingress)
+- [Network Policy](14-network-policy)
+- [Volumes](15-persistence)
 
 ## Referencias
 
