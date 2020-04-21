@@ -2,7 +2,7 @@
 ## Services
 Un Service permite que exista tráfico hacia componentes externos de la aplicación basados en un label.
 
-### NodePort
+### NodePort
 Crea un puerto en el Nodo que accede al Pod.
 
 Ejemplo: Wordpress
