@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress2
+  namespace: openfaas-fn
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: v3.helloworld.local
+    http:
+      paths:
+      - backend:
+          serviceName: hello-world-openfaas
+          servicePort: 8080
