@@ -1,7 +1,7 @@
 
 ### Taints
 
-Los Taints & Tolerations no tienen que ver con la seguridad de los Nodos o los Pods, son simplemente restricciones asociadas a estos. Los Tains se definen en los Nodos y los Tolerations en los Pods.
+Los Taints & Tolerations no tienen que ver con la seguridad de los Nodos o los Pods, son simplemente restricciones asociadas a estos. Los Taints se definen en los Nodos y los Tolerations en los Pods.
 
 ¿Cómo funciona este comportamiento?
 - Se define en un Nodo un Tains, con el objetivo de restringir el acceso a dicho nodo. taint=blue
