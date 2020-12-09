@@ -52,10 +52,30 @@ spec:
 Los Pods son creados una vez que uno finalice su tarea exitosamente. Si uno falla, volverña a crear un nuevo Pod hasta que llegue al objetivo deseado. Si se desea ejecutar un Job en paralelo, se debe agregar el property parallelism.
 
 
-## CronJobs
+## CronJobs
 
 Un CronJob corresponde a un Job con una calendarización. Se suele usar para la generación de reportes o envío de emails, por ejemplo.
 
 En la definición, la sección ```spec``` del Job se incluye en la sección ```jobTemplate``` del CronJob.
 
-
+Ejemplo: 
+```
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: hello
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello
+            image: busybox
+            args:
+            - /bin/sh
+            - -c
+            - date; echo "Hello, World!"
+          restartPolicy: OnFailure
+```
