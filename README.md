@@ -3,7 +3,7 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 
 ## Requerimientos 📋
 
-- Tener Kubernetes instalado en tu PC.
+- Tener kubectl instalado en tu PC.
 - Un cluster Kubernetes disponible. ([Demo Terraform - Digital Ocean](https://github.com/pablosilvab/demo-terraform-k8s))
 
 ## Contenido
