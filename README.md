@@ -24,6 +24,9 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Network Policy](14-network-policy)
 - [Volumes](15-persistence)
 
+- [Practices](exercises)
+
+
 ## Referencias
 
 - [Kubernetes](https://kubernetes.io/docs/concepts/) - Documentación oficial de Kubernetes.
