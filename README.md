@@ -1,10 +1,10 @@
 # Demo Kubernetes
-El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos de Kubernetes
+El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos de Kubernetes.
 
 ## Requerimientos 📋
 
 - Tener Kubernetes instalado en tu PC.
-- Un cluster Kubernetes disponible. (usa Terraform y levanta algún cluster en la nube --> [Demo Terraform](https://github.com/pablosilvab/demo-terraform-k8s))
+- Un cluster Kubernetes disponible. ([Demo Terraform - Digital Ocean](https://github.com/pablosilvab/demo-terraform-k8s))
 
 ## Contenido
 
