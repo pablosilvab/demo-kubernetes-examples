@@ -1,12 +1,14 @@
 # Demo Kubernetes
-El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos de Kubernetes.
+The goal of this project is make available some basic examples about Kubernetes Resources. 
 
-## Requerimientos 📋
+[![Kubernetes][kubernetes]][kubernetes-url]
 
-- Tener kubectl instalado en tu PC.
-- Un cluster Kubernetes disponible. ([Demo Terraform - Digital Ocean](https://github.com/pablosilvab/demo-terraform-k8s))
+## Requirements 📋
 
-## Contenido
+- kubectl
+- Kubernetes cluster ([Demo Terraform - Digital Ocean](https://github.com/pablosilvab/demo-terraform-k8s))
+
+## Contents
 
 - [PODs](01-pods)
 - [ReplicaSet](02-replicaset)
@@ -27,7 +29,12 @@ El objetivo de este proyecto es disponibilizar ejemplos básicos de los recursos
 - [Practices](exercises)
 
 
-## Referencias
+## References
 
-- [Kubernetes](https://kubernetes.io/docs/concepts/) - Documentación oficial de Kubernetes.
+- [Kubernetes](https://kubernetes.io/docs/concepts/) - Official Documentation 
 
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[kubernetes]: https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white
+[kubernetes-url]: https://kubernetes.io/
